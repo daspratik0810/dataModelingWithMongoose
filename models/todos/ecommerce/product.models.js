@@ -28,7 +28,7 @@ const productSchema = new mongoose.Schema(
             ref : "Category",
             required : true 
         },
-        user : {
+        owner : {
             type : mongoose.Schema.Types.ObjectId,
             ref : "User" 
         },
