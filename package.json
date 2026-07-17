@@ -1,0 +1,27 @@
+{
+  "name": "datamodelingwithmongoose",
+  "version": "1.0.0",
+  "description": "Schema-based solution to model data with Mongoose",
+  "homepage": "https://github.com/daspratik0810/dataModelingWithMongoose#readme",
+  "bugs": {
+    "url": "https://github.com/daspratik0810/dataModelingWithMongoose/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daspratik0810/dataModelingWithMongoose.git"
+  },
+  "license": "ISC",
+  "author": "Pratik Das",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "mongoose": "^9.7.4"
+  }
+}
