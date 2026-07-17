@@ -1,11 +1,32 @@
 import { mongoose } from  "mongoose"
 
+//data for modeling
 const userSchema = new mongoose.Schema(
-    {//data for modeling
+    {
+      //username : String,
+      //email: String,
+      //isActive: Boolean
+      //But in professional way we write like below:
 
+      username:{
+        type:String,
+        required:true,
+        unique : true,
+        lowercase: true
+      },
+      email:{
+        type:String,
+        required:true,
+        unique : true,
+        lowercase:true
+      },
+      password : {
+        type : String,
+        required : [true, "Password is required"],
+        min : [8, "Password must be of 8 characters minimum" ]
+      }
 
-
-    }
+    }, {timestamps:true}
 )
 
 export const User = mongoose.model("User",userSchema)
